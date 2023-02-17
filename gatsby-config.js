@@ -11,5 +11,13 @@ module.exports = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }]
+  }, {
+    resolve: `gatsby-plugin-sass`,
+    options: {
+      sassOptions: {
+        includePaths: ["sass", "@primer/css"],
+      }
+    },
+  },
+  ]
 };
